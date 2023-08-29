@@ -1,0 +1,21 @@
+{
+    "form": {
+      "createAccount": "Create Account",
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "dob": "Date of Birth",
+      "email": "Email",
+      "password": "Password",
+      "uploadFile": "Upload File",
+      "role": "Role",
+      "selectRole": "Select Role",
+      "admin": "Admin",
+      "customer": "Customer",
+      "superAdmin": "Super Admin",
+      "fullNameRequired": "Full Name is required.",
+      "dobRequired": "Date of Birth is required.",
+      "passwordRequired": "Password is required.",
+      "emailRequired": "Email is required."
+    }
+  }
+  
