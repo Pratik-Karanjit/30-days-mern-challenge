@@ -2,8 +2,8 @@ import expressAsyncHandler from "express-async-handler";
 import { Token } from "../schema/model.js";
 import { verifyToken } from "../utils/token.js";
 
+
 let isAuthenticatedForEmail = expressAsyncHandler(async (req, res, next) => {
-  // console.log("chiryo hai isAuthenticatedForEmail")
     let bearerToken = req.query.token;
     // console.log("***********" + bearerToken)
     let _token = await Token.findOne({ token: bearerToken });
@@ -13,7 +13,6 @@ let isAuthenticatedForEmail = expressAsyncHandler(async (req, res, next) => {
       error.statusCode = 401;
       throw error;
     } else {
-        // console.log("here..................")
         // console.log(_token.token)
         try {
       var info = await verifyToken(_token.token);

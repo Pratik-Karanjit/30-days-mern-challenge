@@ -114,7 +114,7 @@ import path from 'path';
   
         const link = `${baseUrl}/verify-email?token=${token}`;
         await sendMail({
-          from: '"Pratik Karanjit" <uniquekc425@gmail.com>',
+          from: '"Pratik Karanjit" <abc@gmail.com>',
           to: [data.email],
           subject: 'Email verification',
           html: `<h1>
@@ -280,7 +280,7 @@ import path from 'path';
 
   export let readAllUser = expressAsyncHandler(async (req, res, next) => {
     try {
-      let result = await User.find({ name: "nitan" });
+      let result = await User.find({ name: "pratik" });
   
       successResponse(res, HttpStatus.OK, "Read User  successfully", result);
     } catch (error) {

@@ -18,6 +18,7 @@ import ForgotPassword from './ProjectComponents/ForgotPassword'
 import ForgotPassVerification from './ProjectComponents/ForgotPasswordVerification'
 import ForgotPasswordReset from './ProjectComponents/ForgotResetPassword'
 import MyComponentPage from './pages/MyComponent'
+import ProductList from './ProjectComponents/ProductListItem'
 const WowProject = () => {
   return (
     
@@ -47,6 +48,8 @@ const WowProject = () => {
         <Route path = "read" element = {<ReadAllData></ReadAllData>}></Route>
         <Route path = "registration-success" element = {<RegistrationSuccess></RegistrationSuccess>}></Route>
         <Route path = "verify" element = {<VerifyEmailPage></VerifyEmailPage>}></Route>
+        <Route path="products" element={<ProductList></ProductList>}></Route>
+
         <Route path="verify-email" element={<VerifyEmailPage />}querystring/>
         
 
